@@ -1,0 +1,49 @@
+.squares-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.squares-wrapper > .squares {
+  width: 1000px;
+  margin-left: 200px;
+}
+
+.squares-wrapper > .squares > .square {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -4px;
+}
+
+/* .square > .image-wrapper  {
+  width: 450px;
+  margin-left: 100px;
+} */
+
+.square > .image-wrapper img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.square > .square-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 42px;
+}
+
+.square > .square-text-wrapper h1 {
+  color: #cea135;
+  margin-bottom: 20px;
+}
+
+.square > .square-text-wrapper p {
+letter-spacing: 2px;
+line-height: 30px;
+}
+
+.square > .square-text-wrapper ul, ol {
+  letter-spacing: 1px;
+  line-height: 30px;
+}

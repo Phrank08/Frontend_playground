@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Eneh Franklyn Okechukwu">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ping Pong Game</title>
+
+	<style>
+		canvas {
+			background: #111;
+		}
+	</style>
+</head>
+<body onload="startGame()">
+	<div id="score"></div>
+
+
+	<script>
+		var pong1;
+		var pong2;
+		var ball;
+		var myScore;
+		var myScore1;
+
+		function startGame() {
+			myGameArea.start();
+
+			pong1 = new component(8, 60 , "yellow" , 20 , 150);
+			pong2 = new component(8, 60 , "white" , 670 , 150);
+			ball = new component(7, 7 , "orange" , 350 , 170);
+			myScore = new component("14px", "consolas" , "yellow" , 200 , 25 , "text");
+			myScore1 = new component("14px", "consolas" , "white" , 410 , 25 , "text");
+		}
+
+		var myGameArea = {
+			canvas : document.createElement('canvas'),
+			start : function() {
+				this.canvas.width = 700;
+				this.canvas.height = 400;
+				this.context = this.canvas.getContext('2d');
+				document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+				this.interval = setInterval(updateGameArea, 30);
+
+				window.addEventListener('keydown' , function(e) {
+					myGameArea.keys = (myGameArea.keys || []);
+					myGameArea.keys[e.keycode] = true;
+				})
+
+				window.addEventListener('keyup' , function(e) {
+					myGameArea.keys = (myGameArea.keys || []);
+					myGameArea.keys[e.keycode] = false;
+				})
+			},
+			clear: function() {
+				this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+			},
+			stop: function() {
+				clearInterval(this.interval);
+			}
+		}
+
+		// CONSTRUCTION FUNCTION TO CREATE DIFFERENT OBJECTS /////////////////////////////
+		function component(width , height , color , x , y , type) {
+			this.type = type;
+			this.width = width;
+			this.height = height;
+			this.x = x;
+			this.y = y;
+			this.speedX = 0;
+			this.speedY = 0;
+
+			this.update = function() {
+				ctx = myGameArea.context;
+				if(this.type == "text") {
+					ctx.font = this.width + " " + this.height;
+					ctx.fillStyle = color;
+					ctx.fillText(this.text, this.x, this.y);
+				} else {
+					ctx.fillStyle = color;
+					ctx.fillRect(this.x, this.y, this.width, this.height);
+				}
+			}
+
+			this.newPos = function() {
+				this.x += this.speedX;
+				this.y += this.speedY;
+			}
+
+			this.crrashWith = function(otherobj ) {
+				var myleft = this.x;
+				var myRight = this.x + this.width;
+				var mytop = this.y;
+				var mybottom = this.y + this.height;
+				var otherleft = otherobj.x;
+				var otherright = otherobj.x + (otherobj.width);
+				var othertop = otherobj.y;
+				var otherbottom = otherobj.y + (otherobj.height);
+				var crash == true;
+
+				if((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myright > otherright)) {
+					crash == false;
+				}
+				return crash;
+			}
+		}
+
+		// UPDATE GAME FUNCTION ///////////////////////////////////////////////////
+		//////////////////////////////////////////////////////////////////////////
+		function updateGameArea(){
+
+
+
+			// keyboard Control /////////////////////////////////////////////////////
+			////////////////////////////////////////////////////////////////////////
+			if(myGameArea.keys && myGameArea.keys[38]) {
+				pong1.y -= -10;
+				if(ball.crashWith(pong1)) {
+					ball.speedY = -4;
+					ball.speedX = 14;
+				}
+			}
+
+			if(myGameArea.keys && myGameArea.keys[40]) {
+				pong1.y += 10;
+				if(ball.crashWith(pong1)) {
+					ball.speedY = 4;
+					ball.speedX = 14;
+				}
+			}
+
+			if(myGameArea.keys && myGameArea.keys[37]) {
+				pong2.y -= -10;
+				if(ball.crashWith(pong1)) {
+					ball.speedY = -4;
+					ball.speedX = -8;
+				}
+			}
+
+			if(myGameArea.keys && myGameArea.keys[38]) {
+				pong1.y += -10;
+				if(ball.crashWith(pong1)) {
+					ball.speedY = 4;
+					ball.speedX = -8;
+				}
+			}
+			pong1.update();
+			pong2.update();
+			ball.update();
+
+			myScore.text = "Score :";
+			myScore1.text = "Score :";
+			myScore.update();
+			myScore.update();
+			myScore1.update();
+		}
+	</script>
+</body>
+</html>

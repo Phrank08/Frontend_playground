@@ -1,0 +1,80 @@
+.footer-wrapper {
+  background-color: #11122b;
+  font-family: "Ubuntu Condensed", sans-serif;
+  color: #cbcbcb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-wrapper > .logo-wrapper > .center-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.footer-wrapper > .center-wrapper > .logo-wrapper img{
+  width: 216px;
+    height: 100%;
+    opacity: 30%;
+}
+
+.footer-wrapper > .center-wrapper > .phone-hours-wrapper > .phone-wrapper {
+  margin: 20px;
+  letter-spacing: 1px;
+}
+
+.footer-wrapper > .center-wrapper > .phone-hours-wrapper > .hours-wrapper {
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  color: #cea135;
+}
+
+.footer-wrapper > .center-wrapper > .link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  gap: 50px;
+}
+
+.footer-wrapper > .center-wrapper > .link-wrapper a {
+  text-decoration: none;
+  text-align: center;
+  color: #cbcbcb;
+  transition: 1s;
+}
+
+.footer-wrapper > .center-wrapper > .link-wrapper a:hover {
+  letter-spacing: 2px;
+  color: #cea135;
+}
+
+.footer-wrapper > .center-wrapper > .social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  gap: 50px;
+
+}
+
+.footer-wrapper > .center-wrapper > .social-media-icons a {
+  color: #cbcbcb;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.footer-wrapper > .center-wrapper > .social-media-icons a:hover {
+  color: #cea135;
+}
+
+.footer-wrapper > .center-wrapper > .copyright-wrapper {
+  padding-top: 50px;
+  font-size: 0.8em;
+  opacity: 50%;
+}

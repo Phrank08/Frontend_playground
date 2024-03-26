@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: #111;
+
+}
+
+.facebook-navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1f1e1e;
+    left: 0;
+    border-bottom: 0.1px solid #817e7e;
+    right: 0;
+}
+
+.left-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-column {
+    font-size: 1.5em;
+    display: flex;
+    color: rgb(249 244 244);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fb-icon {
+    margin-left: 50px;
+    width: 75px;
+    transition: .1s;
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.fb-icon:hover {
+    background-color: #2e2d2d;
+    width: 75px;
+    border-radius: 8px;
+}
+
+.right-column {
+    width: 300px;
+}
+
+.fb-search {
+    position: relative;
+}
+
+.fb-search input {
+    padding: 10px;
+    border-radius: 70px;
+    width: 230px;
+    background-color: #363535;
+    border: none;
+    font-size: 16px;
+}
+.fb-search input::placeholder {
+    padding-left: 24px;
+}
+
+.fb-search input:hover ::placeholder {
+    opacity: 0;
+    
+}
+
+.search-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 1;
+    color: rgb(249 244 244);
+}
+
+.right-column {
+    font-size: 1.2em;
+    display: flex;
+    color: rgb(249 244 244);
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+
+}
+
+.right-column .icon-fb {
+   margin-right: 8px;
+}
+
+.profile-pic img {
+    height: 40px;
+    /* position: absolute; */
+    width: 40px;
+    border-radius: 20px;
+}
+
+.number-1 {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    background: red;
+    color: white;
+    top: -0;
+    right: -2px;
+    font-size: 11px;
+    border-radius: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.number-20 {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    background: red;
+    color: white;
+    top: -3px;
+    right: -10px;
+    font-size: 11px;
+    border-radius: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}

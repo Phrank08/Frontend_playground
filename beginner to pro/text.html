@@ -1,0 +1,884 @@
+<style>
+  p {
+    margin-left: 8px;
+  }
+  .video-title {
+    font-family: Tahoma;
+    font-size: 34px;
+    margin-left: 8px;
+  }
+
+  .HTML {
+    font-family: Verdana;
+    width: 200px;
+    font-size: 20px;
+  }
+
+  .pro {
+    font-size: 16px;
+    color: grey;
+    line-height: 25px;
+  }
+
+  .Course {
+    margin-top: 0;
+    font-family: verdana;
+    font-size: 16px;
+    width: 280px;
+  }
+
+  .btn {
+    font-family: Verdana;
+    color: #fff;
+    background: green;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-left: 8px;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .Biggest {
+  font-family: Arial;
+  margin-top: 80px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0;
+  }
+
+  .sales {
+    margin-top: 10px;
+    color: red;
+    font-family: Arial;
+    font-style:  italic;
+    font-size: 20px;
+    margin bottom: 0;
+
+  }
+
+  .Shopping {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .apple {
+    font-family: Arial;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .Learn {
+    font-size: 14px;
+    text-align: center;
+    color: blue;
+    cursor: pointer;
+    margin-top: 20px
+  }
+
+  .Learn:hover{
+    color: indigo;
+    margin-bottom: 0;
+  }
+
+  .New {
+    margin-top: 100px;
+    text-align: center;
+    font-family: Arial;
+    color: red;
+    margin-bottom: 0;
+  }
+
+  .Mac {
+    margin-top: 8px;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  .Super {
+    margin-top: 5px;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  .From {
+    margin-top: 5px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .Buy {
+    padding-left: 15px;
+    padding-right: 15px;
+    background: rgb(0, 113, 227);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    color: #fff;
+    font-family: Arial;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .USD {
+    margin-top: 100px;
+    font-family: Arial;
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+
+  .DOL {
+    font-size: 14px;
+  }
+
+  .today {
+    margin-top: 5px;
+    font-size: 16px;
+    color: green;
+    font-family: Arial;
+    margin-bottom: 0;
+}
+
+  .After {
+    font-family: Arial;
+    margin-top: 8px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .next {
+    color: red;
+  }
+
+  .free {
+    margin-top: 100px;
+    font-family: Arial;
+    margin-bottom: 5px;
+  }
+
+  .camp {
+    color: grey;
+  }
+
+  .navigate {
+    margin-left: 8px;
+    margin-top: 8px;
+    font-family: Arial;
+    width: 550px;
+    margin-bottom: 0;
+  }
+
+  .Here {
+    margin-top: 16px;
+    font-family: Arial;
+  }
+
+  .chp {
+    color: rgb(41, 118, 211);
+  }
+
+  .pic {
+    width: 200px;
+    border-radius: 15px;
+  }
+
+  .pic-1 {
+    width: 200px;
+    margin-left: 10px;
+  }
+
+  .pic-2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: 10px;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  .pic-3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: 10px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .Search {
+    border-radius: 5px;
+    font-size: 14px;
+    border-width: 1px;
+    margin-left: 8px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .Search-1 {
+    border-radius: 50px;
+    font-size: 14px;
+    border-width: 1px;
+    margin-left: 8px;
+    width: 500px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    border: none;
+  }
+
+  .Email {
+    font-family: Arial;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .Search-2 {
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 350px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+
+  }
+
+  .Privacy {
+    font-family: Arial;
+    font-size: 15px;
+    margin-left: 8px;
+  }
+
+  .Agree {
+    width: 400px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-family: Arial;
+    margin-left: 8px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    transition: opacity .15s;
+  }
+
+  .Agree:hover {
+    opacity: 0.8;
+  }
+
+  .pic-4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    object-fill: cover;
+    object-position: center;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+
+  .p {
+    padding-left: 5px;
+    font-size: 16px;
+    font-family: Arial;
+    vertical-align: middle;
+  }
+
+  .Tweet {
+    background: rgb(41, 118, 211);
+    font-size: 14px;
+    font-family: Arial;
+    color: #fff;
+    margin-left: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+
+  .Search-3, Search-4 {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+
+  .Thanks {
+    font-family: Arial;
+    font-size: 16px;
+    display: inline-block;
+    width: 220px;
+    vertical-align: middle;
+  }
+
+  .Google {
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 200px;
+    display: block;
+  }
+
+  .Gog {
+    width: 500px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-radius: 50px;
+    border-style: none;
+    margin-bottom: 100px;
+    border-width: 1px;
+    font-family: Arial;
+    font-size: 16px;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.25);
+  }
+
+  .First-name-1 {
+    width: 150px;
+    border-radius: 8px;
+    margin-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Arial;
+    font-size: 16px;
+    padding-left: 8px;
+    border-width: 1px;
+    border-color: grey;
+  }
+
+  .First-name-2 {
+    width: 150px;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px
+    font-family: Arial;
+    font-size: 16px;
+    padding-left: 8px;
+    border-width: 1px;
+    border-color: grey;
+  }
+
+  .name-1 {
+    width: 310px;
+    display: block;
+    margin-top: 15px;
+    margin-left: 8px;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    font-family: Arial;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: grey;
+  }
+
+  .Up {
+      width: 310px;
+      margin-left: 8px;
+      border-radius: 8px;
+      margin-top: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 8px;
+      background: blue;
+      color: #fff;
+      border: none;
+      font-family: Arial;
+      font-size: 16px;
+      margin-bottom: 100px;
+  }
+
+  .ride {
+    font-family: Arial;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .pickup {
+    margin-left: 8px;
+    width: 300px;
+    border: none;
+    display: block;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-family: Arial;
+    font-size: 16px;
+    background: rgb(240, 240,240);
+    margin-bottom: 10px;
+  }
+
+  .destination {
+    margin-left: 8px;
+    width: 300px;
+    margin-bottom: 8px;
+    border: none;
+    display: block;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-family: Arial;
+    font-size: 16px;
+    background: rgb(240, 240,240);
+  }
+
+  .Rn {
+    margin-left: 8px;
+    background: black;
+    margin-top: 30px;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-family: Arial;
+    border: none;
+    cursor: pointer;
+    transition: opacity .3s;
+  }
+
+  .Rn:hover {
+    opacity: 0.8;
+  }
+
+  .Schedule {
+    margin-left: 15px;
+    background: rgb(240, 240,240);
+    margin-top: 30px;
+    color: black;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-family: Arial;
+    border: none;
+    cursor: pointer;
+    transition: color .3s, background .3s, opacity .3s;
+  }
+
+  .Schedule:hover {
+    color: rgb(240, 240,240);
+    background: black;
+    opacity: 0.8;
+  }
+
+  .red-square {
+    background: red;
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+  }
+
+  .green-circle {
+    background: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-top: 40px;
+  }
+
+  .satisfied {
+    margin-top: 50px;
+    font-family: Arial;
+    font-size: 16px;
+    padding-left: 15px;
+    width: 300px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid black;
+  }
+
+  .satisfied-1 {
+    display: block;
+    margin-bottom: 10px
+  }
+
+  .Ins {
+    margin-top: 80px;
+    width: 350px;
+    color: #fff;
+    background: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    font-family: Arial;
+  }
+
+  .Install {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .Youtube {
+    margin-top: 10px;
+    color: grey;
+    font-size: 14px;
+    width: 320px;
+  }
+
+  .Twitter {
+    margin-top: 100px;
+    width: 500px;
+    border-radius:5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    padding-top: 8px;
+    padding-bottom:8px;
+    padding-left:10px;
+  }
+
+  .pic-5 {
+    width: 50px;
+    height: 50px;
+    object-fill: cover;
+    object-position: center;
+    border-radius: 100px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+  .happen {
+    font-family: Arial;
+    font-size: 16px;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 200px;
+  }
+
+  .blue {
+    border-radius: 50px;
+    font-family: Arial;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+    color: #fff;
+    background: rgb(41, 118, 211);
+  }
+
+  .fb-clone {
+    margin-top: 100px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    height: 480px;
+    display: inline-block;
+  }
+
+  .pic-6 {
+    width: 300px;
+    height: 350px;
+    object-fill: cover;
+    object-position: center;
+    cursor: pointer;
+  }
+
+  .Frank {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-left: 8px;
+  }
+
+  .Mutual {
+    margin-top: 5px;
+    font-family: Arial;
+    font-size: 16px;
+    margin-left: 8px;
+  }
+
+  .Friend {
+    margin-left: 8px;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: Arial;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    background: rgb(41, 118, 211);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .fb-clone-1 {
+    margin-left: 15px;
+    margin-top: 100px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    height: 480px;
+    display: inline-block;
+  }
+
+  .pic-7 {
+    width: 300px;
+    height: 350px;
+    object-fill: cover;
+    object-position: center;
+    cursor: pointer;
+  }
+
+  .Oliver {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-left: 8px;
+  }
+
+  .Mutual-1 {
+    margin-top: 5px;
+    font-family: Arial;
+    font-size: 16px;
+    margin-left: 8px;
+  }
+
+  .Friend-1 {
+    margin-left: 8px;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: Arial;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    background: rgb(41, 118, 211);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .fb-clone-2 {
+    margin-left: 15px;
+    margin-top: 100px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    height: 480px;
+    display: inline-block;
+  }
+
+  .pic-8 {
+    width: 300px;
+    height: 350px;
+    object-fill: cover;
+    object-position: center;
+    cursor: pointer;
+  }
+
+  .Rex {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-left: 8px;
+  }
+
+  .Mutual-2 {
+    margin-top: 5px;
+    font-family: Arial;
+    font-size: 16px;
+    margin-left: 8px;
+  }
+
+  .Friend-2 {
+    margin-left: 8px;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: Arial;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    background: rgb(41, 118, 211);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .phrank {
+    <!-- width: 500px; -->
+    display: inline-block;
+  }
+
+  .phrank img {
+    border-radius: 100px;
+    object-position: center;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+  }
+</style>
+
+
+<p class="video-title">This is Tahoma Font</p>
+<br>
+<br>
+<br>
+<p class="HTML"> <strong>HTML CSS Course</strong> <span class="pro">Beginner to pro</span></p>
+<p class="Course">In this course, we'll learn the skills you need to become a developer.</p>
+
+<button class="btn"> Get Started</button>
+
+<p class="Biggest"> Biggest Deals of the year&#33;</p>
+<p class="sales">Sales end Tuesday</p>
+<p class="Shopping"> Shopping for your business &#63;</p>
+<p class="apple">See how Apple at Work can help.</p>
+<p class="Learn">Learn More &gt;</p>
+
+
+<p class="New">New</p>
+<p class="Mac"> MacBook Pro</p>
+<p class="Super"> Supercharged for pros.</p>
+<p class="From">From &#36;1999</p>
+  <p class="Buy">Buy</p>
+
+<p class="USD">1,049.61 <span class="DOL">USD</span></p>
+<p class="today"> +18.05 (1.75%) today</p>
+<p class="After"> After hours 1,048.00 <span class="next">-1.61 (0.15%)</span></p>
+
+<p class="free"><strong>freeCodeCamp.org</strong> <span class="camp">@freeCodeCamp 1h</span></p>
+<p class="navigate">As a web developer,you'll want to make your projects easy to use and navigate around.</p>
+<p class="Here">Here <span class="chp">@chp_it</span> outlines the top skills new developer should have.</p>
+<img src="images/Cartoon 46.jpg" class="pic">
+<img src="images/Cartoon 46.jpg" class="pic-1">
+<img src="images/Cartoon 46.jpg" class="pic-2">
+<img src="images/campaign.jpg" class="pic-3">
+<br>
+<br>
+<br>
+
+<input type="text" placeholder="Search" class="Search">
+<br>
+<br>
+<br>
+<br>
+<input type="text" placeholder="Search Google or type a URL " class="Search-1">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p class="Email">Email</p>
+
+<input type="text" class="Search-2">
+
+<p class="Privacy">By clicking Agree & Join, you agree to the Privacy Policy.</p>
+<button class="Agree">Agree & Join</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="Cartoon 46.jpg" class="pic-4">
+<span class="p">What's happening?</span>
+<span class="tweet">Tweet</span>
+<br>
+<br>
+<br>
+<br>
+<input type="text" placeholder="Name " class="Search-3">
+<input type="Email" placeholder="Email " class="Search-4">
+<br>
+<br>
+<br>
+<br>
+<p class="Thanks">Thanks for chatting with our customer support. Would you like to take our quick survey&#63;</p>
+<button>Yes</button>
+<button>No</button>
+
+<img src="Google.png" class="Google">
+<input type="text" placeholder="Search Google or type a URL" class="Gog">
+<br>
+<br>
+<br>
+<input type="text" placeholder="First name" class="First-name-1">
+<input type="text" placeholder="First name" class="First-name-2">
+<input type="Email" placeholder="Email" class="name-1">
+<button class="Up"> Sign Up</button>
+<p class="ride">Request a ride now</p>
+<input type="text" placeholder="Enter pickup location" class="pickup">
+<input type="text" placeholder="destination" class="Enter destination">
+<button class="Rn">Request Now</button>
+<button class="Schedule">Schedule for later</button>
+<div class="red-square">
+
+</div>
+<div class="green-circle">
+
+</div>
+<div class="satisfied">
+  <span class="satisfied-1">Satisfied with our services&#63;</span>
+  <button class="ss">Yes</button>
+  <button>No</button>
+</div>
+<div class="Ins">
+  <p class="Install">Install YouTube Music</p>
+  <p class="Youtube">Add YouTube Music to your desktop for quick and easy access </p>
+</div>
+<div class="twitter">
+  <img src="images/Cartoon 46.jpg" class="pic-5">
+  <span class="happen">What's happening&#63;</span>
+  <button class="blue"> Tweet</button>
+</div>
+<div class="fb-clone">
+  <img src="images/Cartoon 46.jpg" class="pic-6">
+  <p class="Frank">Frank</p>
+  <!-- <div class="phrank">
+    <img src="images/Cartoon 46.jpg" class="pic-6">
+  </div> -->
+
+  <p class="Mutual">2 mutual friends</p>
+  <button class="Friend">Add Friend</button>
+</div>
+
+
+<div class="fb-clone-1">
+  <img src="images/Cartoon 7.jpg" class="pic-7">
+  <p class="Oliver">Oliver</p>
+  <p class="Mutual-1">3 mutual friends</p>
+  <button class="Friend-1">Add Friend</button>
+</div>
+
+<div class="fb-clone-2">
+  <img src="images/Cartoon 69.jpg" class="pic-8">
+  <p class="Rex">Rex</p>
+  <p class="Mutual-2">4 mutual friends</p>
+  <button class="Friend-2">Add Friend</button>
+</div>

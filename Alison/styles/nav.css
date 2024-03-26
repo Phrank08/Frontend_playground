@@ -1,0 +1,109 @@
+.navigation-wrapper {
+  background: #11122b;
+  color: #cbcbcb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 190px;
+  font-family: 'Roboto', sans-serif;
+  padding: 60px 100px;
+}
+
+.navigation-wrapper > .left-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-wrapper > .left-column > .phone-icon {
+  font-size: 2em;
+  margin-right: 15px;
+}
+
+.navigation-wrapper > .left-column > .contact-wrapper > .hours {
+  font-family: 'Ubuntu Condensed', sans-serif;
+    color: #858585;
+    font-size: 0.8em;
+    /* line-height: 20px; */
+}
+
+.navigation-wrapper >.left-column > .contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.navigation-wrapper > .contact-wrapper > .hours {
+  font-size: 0.8em;
+
+}
+.navigation-wrapper > .center-column > .center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-wrapper > .center-column > .center-image img {
+  width: 216px;
+  height: 100%;
+}
+
+.navigation-wrapper > .center-column > .link-wrapper {
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 42px;
+  gap: 100px;
+}
+
+.navigation-wrapper > .center-column > .link-wrapper a {
+   text-decoration: none;
+   font-family:"Ubuntu Condensed", sans-serif;
+   color: #cbcbcb;
+   transition: 0.5s;
+}
+
+.navigation-wrapper > .center-column > .link-wrapper a:hover {
+   color: #cea135;
+   letter-spacing: 2px;
+}
+
+ .link-wrapper > .navlink{
+   width: 70px;
+   text-align: center;
+ }
+
+.navigation-wrapper > .right-column  {
+   text-align: right;
+   display: flex;
+   align-items: center;
+}
+
+.navigation-wrapper > .right-column a {
+   text-decoration: none;
+   font-family:"Ubuntu Condensed", sans-serif;
+   color: #cbcbcb;
+   font-size: 0.8em;
+   color: #cbcbcb;
+   transition: 0.5s;
+}
+
+.navigation-wrapper > .right-column a:hover {
+   color: #cea135
+}
+
+.navigation-wrapper > .right-column > .Address-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+
+}
+.navigation-wrapper > .right-column > .Address-wrapper > .Street-wrapper  {
+  opacity: 50%;
+}
+
+.navigation-wrapper > .right-column > .Address-wrapper > .map-icon  {
+    font-size: 2.5em;
+    margin-left: 15px;
+}

@@ -1,0 +1,25 @@
+.page-container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  /* align-items: center; */
+}
+.page-container > .content-wrapper > #chef {
+  width: 350px;
+  margin: 10px 40px 20px 0px;
+  border: 2px solid #cea135;
+  float: left;
+  border-radius: 2px;
+}
+
+.page-container > .content-wrapper > p {
+  width: 800px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.page-container > .content-wrapper > p > .welcome {
+  font-weight: 700;
+  font-size: 5em;
+
+}

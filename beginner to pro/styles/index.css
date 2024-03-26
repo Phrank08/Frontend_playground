@@ -1,0 +1,240 @@
+body {
+  padding-top: 50px;
+  padding-left: 55px;
+}
+
+.cointain {
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.nike {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+ .lady {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+width: 800px;
+column-gap: 2px;
+margin-bottom: 50px;
+}
+
+.smith {
+  width: 250px;
+  <!-- height: 200px; -->
+  margin-left: 15px;
+  margin-top: 50px;
+  object-fill: contain;
+}
+
+.laba {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.smith img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.collins {
+  width: 25px;
+  display: inline-block;
+}
+
+.collins img {
+  width: 100%;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.cheese {
+  width: 238px;
+  border: 1px solid transparent;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25 );
+  border-top-color: transparent;
+  padding-left: 10px;
+  height: 135px;
+}
+
+.mutual {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
+  <!-- font-weight: 900; -->
+  margin-bottom: 0;
+  font-size: 1.0em;
+  color: #858585;
+  margin-left: 5px;
+}
+
+.oliver {
+  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.Add {
+  padding: 8px 10px;
+  width: 100px;
+  background: rgb(0, 113, 227);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.link {
+  color: rgb(0, 113, 133);
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.link:hover {
+color: rgb(255, 164, 28);
+}
+.stock {
+  color: rgb(0, 118, 0);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart {
+  background-color: rgb(255, 216, 20);
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 120px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+    transition: color 0.15s;
+}
+
+.cart:hover {
+  opacity: 0.8;
+}
+.buy {
+  background-color: rgb(255, 164, 28);
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 120px;
+  height: 40px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+    transition: color 0.15s;
+}
+
+.buy:hover {
+  opacity: 0.8;
+}
+.cover {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding-left: 50px;
+  padding-bottom: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.haier {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex: 1;
+}
+
+.liver {
+  width: 42px;
+}
+
+.liver img {
+  width: 80%;
+  border-radius: 16px;
+  height: 32px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.right-column {
+  width: 200px;
+}
+
+ .Message {
+  padding: 8px;
+  background: #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.Add-Friend {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(0, 113, 227);
+  cursor: pointer;
+  color: #fff;
+}
+
+.cover-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  margin-top: 32px;
+  /* right: 1400px; */
+  height: 55px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.haier-1 {
+  display: flex;
+  justify-content: start;
+  /* height: 100px; */
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  padding-top: 15px;
+  margin-top: 210px;
+}
+
+.liver-1 {
+  width: 42px;
+}
+
+.liver-1 img {
+  width: 80%;
+  border-radius: 16px;
+  height: 32px;
+  margin-bottom: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
